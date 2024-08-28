@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="https://rr5---sn-cvh7kn6s.googlevideo.com/videoplayback?expire=1723633090&ei=Yjm8ZqG_M5KV4t4PjcipaA&ip=117.202.158.176&id=o-AB0qFUL6XUOBOVl42LulywWcAqiTATKe5JlIujRSrbfK&itag=313&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C271%2C278%2C313&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AQmm2ezFfVmV-1OLGYS8CvCHnldCv1ehr81AxyK1EkxIeGlzPaEo9bGXkVtbbhRjkGRUnnyLqkwi3bfS&spc=Mv1m9n_XEwV9be5Otu8FECfJ3IgJqYXIXKzxxFnvKnYqekMjXs4Y&vprv=1&svpuc=1&mime=video%2Fwebm&ns=7JCa6En2FU31VFN6xir-YzAQ&rqh=1&gir=yes&clen=30689160&dur=31.200&lmt=1639076403011698&keepalive=yes&c=WEB_CREATOR&sefc=1&txp=5316224&n=DDtyLeOtR8cqDw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAOFeZA9H6NlkyNe6ucBlIzm3h9Kat_cUZw3P61sd9gYFAiByTqW3iXIdFE7xiBS0jg87Y2ElCSVm5LOpmbgxG5hMdQ%3D%3D&redirect_counter=1&rm=sn-h55ez7e&rrc=104&fexp=24350516,24350517,24350556,24350561&req_id=8565d4e37416a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=hw&mip=117.250.144.129&mm=31&mn=sn-cvh7kn6s&ms=au&mt=1723610957&mv=m&mvi=5&pl=20&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AGtxev0wRQIhAIxGIxE4VWP9DGMP9tEWLuem2u7JdseNUpKd1IfpxS78AiAjeKo9iCJGMHN3RbZTGV3D6xpiX3jVZK636oecU1LkOA%3D%3D" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <div class="container">
+        <h1>My Secretgiggle Blog</h1>
+        
+        <section id="create-post">
+            <h2>Create a New Post</h2>
+            <form id="post-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="content" placeholder="Content" required></textarea>
+                <select id="category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Education">Education</option>
+                    <option value="Travel">Travel</option>
+                    
+                </select>
+                <button type="submit">Create Post</button>
+            </form>
+        </section>
+
+        <section id="posts">
+            <h2>All Posts</h2>
+            <div id="posts-container"></div>
+        </section>
+    </div>
+    
+    <script src="blog.js"></script>
+</body>
+</html>

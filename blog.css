@@ -1,0 +1,124 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+   
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    position:fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: 0 auto;
+    padding: 600px;
+    background-color: rgba(285, 285, 285, 0.4);
+    
+}
+
+h1{
+    color: black;
+    text-align:center;
+    padding-bottom: 150px;
+}
+
+ h2 {
+    text-align: left;
+    color: brown;
+}
+
+form {
+    margin-bottom: 20px;
+    
+}
+
+input, textarea {
+    font-size: 20px;
+    font-weight: bolder;
+    width: 97%;
+    padding: 22px;
+    margin: 24px 0;
+    border: 1px solid #231a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(191, 14, 170, 0.4);
+
+}
+
+button {
+    padding: 11px 20px;
+    border: solid,burlywood;
+    background-color:cadetblue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+button:hover {
+    background-color:crimson;
+}
+
+.post {
+    border: 1px solid #231a1a;
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(191, 14, 170, 0.4);
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post p {
+    margin: 10px 0;
+}
+
+.likes-comments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes-comments button {
+    padding: 5px 10px;
+    background-color:darkcyan;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.likes-comments button:hover {
+    background-color: #218838;
+}
+
+
+#category{
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: lightsalmon;
+}
